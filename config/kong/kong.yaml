@@ -19,3 +19,6 @@ services:
     paths:
     - /api
     strip_path: true
+plugins:
+- name: request-logger
+  config: {}

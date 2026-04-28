@@ -32,7 +32,9 @@ spec:
               name: admin
           env:
             - name: KONG_PLUGINS
-              value: "bundled,phantom-token"
+              value: "bundled,phantom-token,request-logger"
+            - name: KONG_LUA_PACKAGE_PATH
+              value: "/app/lua/?.lua;/app/lua/?/init.lua;;"
             - name: KONG_NGINX_HTTP_LUA_SHARED_DICT
               value: "phantom-token 10m"
             - name: KONG_DATABASE
