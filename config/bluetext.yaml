@@ -10,4 +10,7 @@ run-specs:
     autorun: development
     namespaces:
       main:
-        services: []
+        services:
+        - api
+        - web-app
+        - kong
