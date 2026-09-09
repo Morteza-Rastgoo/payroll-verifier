@@ -18,7 +18,7 @@ Voice: nova
 
 import os, json, urllib.request, urllib.error
 
-API_KEY = "REDACTED_OPENROUTER_KEY"
+API_KEY = os.environ["OPENROUTER_API_KEY"]
 HEADERS = {
     "Authorization": f"Bearer {API_KEY}",
     "Content-Type": "application/json",

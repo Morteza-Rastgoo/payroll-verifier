@@ -2,3 +2,6 @@
 .flutter-cache/
 node_modules/
 target/
+
+.env
+*.env
